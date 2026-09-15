@@ -1,0 +1,13 @@
+body {
+    background-color: hsl(225, 100%, 94%);
+}
+
+main {
+    width: 90%;
+    max-width: 450px;
+    margin: 50px auto;
+    background-color: hsl(225, 100%, 98%);
+    padding: 30px;
+    border-radius: 15px;
+}
+
