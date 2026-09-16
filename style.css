@@ -1,24 +1,30 @@
 /* Definição da cor do background */
 body {
     background-color: hsl(225, 100%, 94%);
+    background-image: url("imagens/imagem_background_ilustração.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
     font-family: 'Red Hat Display', sans-serif;
 }
 
 /* Estilização dos textos */
 main {
     width: 90%;
-    max-width: 450px;
+    max-width: 400px;
     margin: 50px auto;
     background-color: hsl(225, 100%, 98%);
-    padding: 30px;
+    padding: 25px;
     border-radius: 15px;
     text-align: center;
 }
 
 /* Estilização da imagem principal */
-main img {
-    max-width: 100%;
-    width: 100%;
+main > img {
+    max-width: none;
+    width: calc(100% + 50px);
+    margin: -25px -25px 0 -25px;
+    border-radius: 15px 15px 0 0;
 }
 
 /* Tamanho do Título principal */
@@ -35,7 +41,7 @@ p{
     font-size: 16px;
     max-width: 350px;
     margin: 0 auto;
-    margin-top: 15px;
+    margin-top: 10px;
     color: hsl(224, 23%, 55%);
 }
 
@@ -45,25 +51,39 @@ p{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px;
+    padding: 12px;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 /* Estilização da imagem de nota musical */
+
+.icone_padrao {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .icone_padrao img {
-    width: 50px;
+    width: 40px;
 }
 
 /* Estilização das informações do plano */
 .informacoes_plano h2 {
-    font-size: 16px;
+    font-size: 17px;
     color: hsl(223, 47%, 23%);
+    margin: 0;
 }
 
 .informacoes_plano p {
-    font-size: 14px;
+    font-size: 15px;
     color: hsl(224, 23%, 55%);
+    margin: 0;
+    margin-top: 3px;
 }
 
 .tipo_plano button {
@@ -77,14 +97,33 @@ p{
 main > button {
     width: 100%;
     background-color: hsl(245, 75%, 52%);
+    border: none;
     color: white;
-    padding: 15px;
-    border-radius: 10px;
-    margin-top: 25px;
+    padding: 12px;
+    border-radius: 12px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .cancelar {
     background: none;
     border: none;
     color: hsl(224, 23%, 55%);
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+
+/* Hover dos botões */
+.pagamento:hover {
+    background-color: hsl(245, 75%, 60%);
+}
+
+.alterar:hover {
+    color: hsl(245, 75%, 40%);
+}
+
+.cancelar:hover {
+    color: hsl(223, 47%, 23%);
 }
