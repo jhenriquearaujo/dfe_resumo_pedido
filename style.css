@@ -1,7 +1,10 @@
+/* Definição da cor do background */
 body {
     background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
 }
 
+/* Estilização dos textos */
 main {
     width: 90%;
     max-width: 450px;
@@ -9,5 +12,79 @@ main {
     background-color: hsl(225, 100%, 98%);
     padding: 30px;
     border-radius: 15px;
+    text-align: center;
 }
 
+/* Estilização da imagem principal */
+main img {
+    max-width: 100%;
+    width: 100%;
+}
+
+/* Tamanho do Título principal */
+h1 {
+    font-size: 28px;
+    font-weight: 700px;
+    margin-top: 25px;
+    color: hsl(223, 47%, 23%);
+}
+
+
+
+p{
+    font-size: 16px;
+    max-width: 350px;
+    margin: 0 auto;
+    margin-top: 15px;
+    color: hsl(224, 23%, 55%);
+}
+
+/* Estilização do conteiner inferior */
+.tipo_plano {
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Estilização da imagem de nota musical */
+.icone_padrao img {
+    width: 50px;
+}
+
+/* Estilização das informações do plano */
+.informacoes_plano h2 {
+    font-size: 16px;
+    color: hsl(223, 47%, 23%);
+}
+
+.informacoes_plano p {
+    font-size: 14px;
+    color: hsl(224, 23%, 55%);
+}
+
+.tipo_plano button {
+    font-size: 14px;
+    color: hsl(245, 75%, 52%);
+    background: none;
+    border: none;
+    font-weight: 700;
+}
+
+main > button {
+    width: 100%;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.cancelar {
+    background: none;
+    border: none;
+    color: hsl(224, 23%, 55%);
+}
