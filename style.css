@@ -14,10 +14,11 @@ body {
 /* Estilização dos textos */
 main {
     width: 90%;
-    max-width: 400px;
+    max-width: 350px;
     margin: 50px auto;
     background-color: hsl(225, 100%, 98%);
-    padding: 25px;
+    padding: 20px;
+    padding-bottom: 30px;
     border-radius: 15px;
     text-align: center;
 }
@@ -25,23 +26,23 @@ main {
 /* Estilização da imagem principal */
 main > img {
     max-width: none;
-    width: calc(100% + 50px);
-    margin: -25px -25px 0 -25px;
+    width: calc(100% + 40px);
+    margin: -20px -20px 0 -20px;
     border-radius: 15px 15px 0 0;
 }
 
 /* Tamanho do Título principal */
 h1 {
-    font-size: 28px;
-    font-weight: 700px;
-    margin-top: 25px;
+    font-size: 24px;
+    font-weight: 900;
+    margin-top: 35px;
     color: hsl(223, 47%, 23%);
 }
 
 
-
 p{
-    font-size: 16px;
+    font-size: 15px;
+    line-height: 1.4;
     max-width: 350px;
     margin: 0 auto;
     margin-top: 10px;
@@ -53,10 +54,11 @@ p{
     background-color: hsl(225, 100%, 94%);
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 12px;
+    justify-content: flex-start;
+    padding: 20px 10px;
     border-radius: 10px;
-    margin-top: 25px;
+    width: 90%;
+    margin: 25px auto 0;
 }
 
 /* Estilização da imagem de nota musical */
@@ -64,29 +66,33 @@ p{
 .icone_padrao {
     background-color: hsl(225, 100%, 98%);
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .icone_padrao img {
-    width: 40px;
+    width: 20px;
 }
 
 /* Estilização das informações do plano */
 .informacoes_plano h2 {
-    font-size: 17px;
+    font-size: 15px;
+    font-weight: 900;
     color: hsl(223, 47%, 23%);
     margin: 0;
+    margin-left: 15px;
 }
 
 .informacoes_plano p {
     font-size: 15px;
+    font-weight: 700;
     color: hsl(224, 23%, 55%);
     margin: 0;
     margin-top: 3px;
+    margin-left: 15px;
 }
 
 .tipo_plano button {
@@ -95,16 +101,18 @@ p{
     background: none;
     border: none;
     font-weight: 700;
+    text-decoration: underline;
+    margin-left: auto;
 }
 
 main > button {
-    width: 100%;
+    width: 95%;
     background-color: hsl(245, 75%, 52%);
     border: none;
     color: white;
     padding: 12px;
     border-radius: 12px;
-    margin-top: 20px;
+    margin-top: 25px;
     font-size: 16px;
     font-weight: 700;
 }
@@ -114,11 +122,16 @@ main > button {
     border: none;
     color: hsl(224, 23%, 55%);
     margin-top: 15px;
+    margin-bottom: 2px;
     font-size: 14px;
 }
 
 
 /* Hover dos botões */
+
+.pagamento {
+    box-shadow: 0 5px 10px rgba(56, 41, 224, 0.2);
+}
 .pagamento:hover {
     background-color: hsl(245, 75%, 60%);
 }
